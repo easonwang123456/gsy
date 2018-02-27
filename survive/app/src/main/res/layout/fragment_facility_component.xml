@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+<RelativeLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    >
+    <TextView
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:background="@mipmap/wupinpeijian_beijing_selected"
+        android:text="枪口"
+        android:id="@+id/gun_pointer_seleted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:gravity="center"
+        android:background="@mipmap/wupinpeijian_beijing"
+        android:text="枪口"
+        android:id="@+id/gun_pointer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:text="瞄准镜"
+            android:id="@+id/aim_glass_seleted"
+            android:background="@mipmap/wupinpeijian_beijing_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:text="瞄准镜"
+            android:id="@+id/aim_glass"
+            android:background="@mipmap/wupinpeijian_beijing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:text="握把"
+            android:id="@+id/grip_seleted"
+            android:background="@mipmap/wupinpeijian_beijing_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:text="握把"
+            android:id="@+id/grip"
+            android:background="@mipmap/wupinpeijian_beijing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:text="弹夹"
+            android:id="@+id/clip_seleted"
+            android:background="@mipmap/wupinpeijian_beijing_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:text="弹夹"
+            android:id="@+id/clip"
+            android:background="@mipmap/wupinpeijian_beijing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:text="枪托"
+            android:id="@+id/butt_seleted"
+            android:background="@mipmap/wupinpeijian_beijing_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:gravity="center"
+            android:text="枪托"
+            android:id="@+id/butt"
+            android:background="@mipmap/wupinpeijian_beijing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/facility_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <TextView
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:background="@mipmap/wupinpeijian_beijing_selected"
+                android:text="头部护具"
+                android:id="@+id/head_seleted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:background="@mipmap/wupinpeijian_beijing"
+                android:text="头部护具"
+                android:id="@+id/head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:text="背包"
+                android:id="@+id/bag_seleted"
+                android:background="@mipmap/wupinpeijian_beijing_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:text="背包"
+                android:id="@+id/bag"
+                android:background="@mipmap/wupinpeijian_beijing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:text="防弹背心"
+                android:id="@+id/anti_gun_seleted"
+                android:background="@mipmap/wupinpeijian_beijing_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:text="防弹背心"
+                android:id="@+id/anti_gun"
+                android:background="@mipmap/wupinpeijian_beijing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:text="皮带"
+                android:id="@+id/belt_seleted"
+                android:background="@mipmap/wupinpeijian_beijing_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:text="皮带"
+                android:id="@+id/belt"
+                android:background="@mipmap/wupinpeijian_beijing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:text="外衣"
+                android:id="@+id/clothes_seleted"
+                android:background="@mipmap/wupinpeijian_beijing_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:text="外衣"
+                android:id="@+id/clothes"
+                android:background="@mipmap/wupinpeijian_beijing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/facility_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

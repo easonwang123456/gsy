@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gsy.glsurvive">
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:name="com.gsy.glsurvive.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/new_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.gsy.glsurvive.logo.LogoActivity"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:windowSoftInputMode="stateHidden|adjustResize"
+                  android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.gsy.glsurvive.mine_model.login.LoginActivity"
+            ></activity>
+        <activity android:name="com.gsy.glsurvive.mine_model.register.RegisterActivity"
+            ></activity>
+        <activity android:name="com.gsy.glsurvive.mine_model.modify.ModifyPasswordActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name="com.gsy.glsurvive.mine_model.profile.ProfileActivity"></activity>
+        <activity android:name="com.gsy.glsurvive.mine_model.setting.SettingActivity"></activity>
+        <activity android:name="com.gsy.glsurvive.mine_model.suggestion.SuggestionActivity"></activity>
+        <activity android:name="com.gsy.glsurvive.firstpage_model.bannerDetail.BannerDetailActivity"></activity>
+        <activity android:name="com.gsy.glsurvive.data_model.H5UrlActivity"></activity>
+        <activity android:name="com.gsy.glsurvive.data_model.CarryListActivity"></activity>
+        <activity android:name="com.gsy.glsurvive.firstpage_model.first_search.FirstSearchActivity"></activity>
+        <activity android:name="com.gsy.glsurvive.mine_model.message.MyMessageActivity"></activity>
+        <activity android:name="com.gsy.glsurvive.mine_model.collect.MyCollectActivity"></activity>
+        <activity android:name="com.gsy.glsurvive.mine_model.video.LocalVideoActivity" />
+        <activity android:name="com.gsy.glsurvive.firstpage_model.rookie.RookieActivity" />
+        <activity android:name="com.gsy.glsurvive.strategy_model.battle.BattleActivity" />
+        <activity android:name="com.gsy.glsurvive.strategy_model.gun.GunActivity" />
+        <activity android:name="com.gsy.glsurvive.strategy_model.chicken.ChickenActivity" />
+        <activity android:name="com.gsy.glsurvive.strategy_model.battle.battle_recycler.BattleListActivity" />
+        <activity android:name="com.gsy.glsurvive.strategy_model.gun.gun_recycler.GunListActivity" />
+        <activity android:name="com.gsy.glsurvive.firstpage_model.video.VideoDetailActivity" />
+        <activity android:name="com.gsy.glsurvive.firstpage_model.video.video_detail.VideoListDetailActivity" />
+        <activity android:name="com.gsy.glsurvive.mine_model.setting.AboutUsActivity" />
+        <activity android:name="com.gsy.glsurvive.mine_model.setting.update.H5AboutUsActivity" />
+        <activity android:name="com.gsy.glsurvive.MainActivity"
+                  android:screenOrientation="portrait"
+            />
+        <activity android:name="com.gsy.glsurvive.lead.LeadActivity" />
+        <activity android:name="com.gsy.glsurvive.firstpage_model.bannerDetail.ViewPagerActivity" />
+        <activity android:name="com.gsy.glsurvive.firstpage_model.gun.FirstGunActivity" />
+        <activity android:name="com.gsy.glsurvive.firstpage_model.map.FirstMapActivity" />
+        <activity android:name="com.gsy.glsurvive.firstpage_model.gun.gun_detail.GunDetailActivity" />
+        <activity android:name="com.gsy.glsurvive.data_model.facility.FacilityActivity" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.gsy.glsurvive.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize">
+
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:launchMode="singleTask"
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5a7cfa30f43e48226d00015b">
+        </meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="3f46e91fe56007466cf3f37881408e7e">
+        </meta-data>
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" >
+        </meta-data>
+    </application>
+
+</manifest>

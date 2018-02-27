@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:background="@color/white"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/video_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <com.gsy.glsurvive.view.CircleImageView
+                android:id="@+id/img_url"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+
+                />
+            <TextView
+                android:id="@+id/author"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center"
+                android:id="@+id/time"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/content"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <TextView
+        android:background="@color/bg_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/video_collect"
+                android:paddingLeft="30dp"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="收藏"
+                android:drawableLeft="@mipmap/shoucang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/video_weibo"
+                android:paddingLeft="35dp"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="微博"
+                android:drawableLeft="@mipmap/weibo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/video_circle"
+                android:paddingLeft="35dp"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="朋友圈"
+                android:drawableLeft="@mipmap/pengyouquan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:drawablePadding="5dp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@mipmap/shutiao"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="热门视频推荐"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/video_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@mipmap/shutiao"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="全部评价"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="("
+            android:textColor="@color/black" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:id="@+id/comment_total"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text=")"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</LinearLayout>

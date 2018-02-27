@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@mipmap/top"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+        <LinearLayout
+            android:id="@+id/gun_back"
+            android:gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:layout_marginTop="34dp"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/back_icon"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            >
+            <TextView
+                android:id="@+id/gun_title"
+                android:layout_marginTop="26dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            >
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:background="@mipmap/qiangzhidaquan_beijing"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/gun_name"
+            android:textColor="@color/md_amber_500"
+            android:textSize="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/gun_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_gun_detail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:tabIndicatorColor="@color/md_amber_500"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/md_amber_500"
+        app:tabTextColor="#000000"
+        android:background="@color/white"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_gun_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</LinearLayout>
